@@ -7,12 +7,13 @@ The primary goal is to demystify the "black box" of Machine Learning by manually
 ## Implemented Algorithms
 
 *   **Decision Tree (with Gini Impurity)**
-*   **Random Forest Classifier**
+*   **Random Forest**
 *   **Multi-Layer Perceptron (Neural Network)**
 *   **KMeans Clustering (Lloyd's Algorithm)**
+*   **Gradient Boosting**
 
 ## In Progress
 
-*   **Support Vector Machines (SVM), Gradient Boosting**
+*   **Support Vector Machines (SVM), PCA**
 
 Support : https://www.dummies.com/article/technology/information-technology/ai/machine-learning/machine-learning-dummies-cheat-sheet-221432/
