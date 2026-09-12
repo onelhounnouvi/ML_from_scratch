@@ -2,14 +2,14 @@
 
 This repository contains numPy implementations of fundamental Machine Learning algorithms built entirely from scratch. 
 
-The primary goal is to demystify the "black box" of Machine Learning by manually programming the underlying mathematics, optimization algorithms, and data structures, without relying on high-level frameworks like Scikit-Learn, PyTorch, or TensorFlow.
+The primary goal is to demystify the "black box" of Machine Learning by manually programming the underlying mathematics, optimization algorithms, and data structures, without relying on high-level frameworks like Scikit-Learn.
 
 ## Implemented Algorithms
 
 *   **Decision Tree (with Gini Impurity)**
 *   **Random Forest**
 *   **Multi-Layer Perceptron (Neural Network)**
-*   **KMeans Clustering (Lloyd's Algorithm)**
+*   **KMeans Clustering**
 *   **Gradient Boosting**
 
 ## In Progress
