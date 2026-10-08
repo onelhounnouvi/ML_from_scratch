@@ -15,6 +15,6 @@ The primary goal is to demystify the "black box" of Machine Learning by manually
 ## In Progress
 
 *   **PCA**
-*   **a document with the math behind every algorithm (a first version is at [`docs/math.pdf`](docs/math.pdf))**
+*   **documents with the math behind every algorithm ([`docs/kmeans.pdf`](docs/kmeans.pdf) [`docs/decision_trees.pdf`](docs/decision_trees.pdf))**
 
 Support : https://www.dummies.com/article/technology/information-technology/ai/machine-learning/machine-learning-dummies-cheat-sheet-221432/
