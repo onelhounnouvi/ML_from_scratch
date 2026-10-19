@@ -6,9 +6,9 @@ The primary goal is to demystify the "black box" of Machine Learning by manually
 
 ## Implemented Algorithms
 
-*   **Decision Tree (with Gini Impurity)**
+*   **Decision Tree**
 *   **Random Forest**
-*   **Multi-Layer Perceptron (Neural Network)**
+*   **Multi-Layer Perceptron**
 *   **KMeans Clustering**
 *   **Gradient Boosting**
 
