@@ -13,8 +13,8 @@ The primary goal is to demystify the "black box" of Machine Learning by manually
 *   **Multi-Layer Perceptron**
 
 ## Structure 
-* `docs/` — Contains mathematical reports and documentation for each algorithm.
-* `code/` — Contains Python implementations.
+* [`docs/`](./docs/) contains mathematical reports and documentation for each algorithm.
+* [`code/`](./code/) contains Python implementations.
   
 ## In Progress
 
