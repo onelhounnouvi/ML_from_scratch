@@ -8,13 +8,18 @@ The primary goal is to demystify the "black box" of Machine Learning by manually
 
 *   **Decision Tree**
 *   **Random Forest**
-*   **Multi-Layer Perceptron**
-*   **KMeans Clustering**
 *   **Gradient Boosting**
+*   **KMeans Clustering**
+*   **Multi-Layer Perceptron**
 
+## Structure 
+* `docs/` — Contains mathematical reports and documentation for each algorithm.
+* `code/` — Contains Python implementations.
+  
 ## In Progress
 
 *   **PCA**
-*   **documents with the math behind every algorithm ([`docs/kmeans.pdf`](docs/kmeans.pdf) [`docs/decision_trees.pdf`](docs/decision_trees.pdf))**
+*   **documents for MLP and Gradient Boosting**
 
-Support : https://www.dummies.com/article/technology/information-technology/ai/machine-learning/machine-learning-dummies-cheat-sheet-221432/
+## Resource
+* Hastie, T., Tibshirani, R., & Friedman, J. (2009). *The Elements of Statistical Learning*. Springer.
