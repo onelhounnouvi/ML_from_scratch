@@ -2,9 +2,10 @@ import numpy as np
 from decision_tree import DecisionTreeClassifier, DecisionTreeRegressor
 
 class BaseRandomForest():
-    def __init__(self, n_trees = 10, max_depth = 12):
+    def __init__(self, n_trees = 10, max_depth = 8, max_features="sqrt"):
         self.n_trees = n_trees
         self.max_depth = max_depth
+        self.max_features = max_features
         self.trees = []
         
     def _bootstrap_sample(self, X, y):
@@ -24,7 +25,10 @@ class BaseRandomForest():
         for i in range(self.n_trees):
             # On crée UN échantillon Bootstrap pour cet arbre individuel
             X_sample, y_sample = self._bootstrap_sample(X, y)
+            
+            # Création de l'arbre avec la règle des max_features
             tree = self._make_tree()
+            
             # On entraîne cet arbre sur cet échantillon et on l'ajoute à la forêt
             tree.fit(X_sample, y_sample)
             self.trees.append(tree)
@@ -42,7 +46,7 @@ class BaseRandomForest():
 
 class RandomForestClassifier(BaseRandomForest):
     def _make_tree(self):
-        return DecisionTreeClassifier(max_depth=self.max_depth)
+        return DecisionTreeClassifier(max_depth=self.max_depth, max_features=self.max_features)
     
     def _aggregate_predictions(self, votes_per_sample):
         # Pour la classification, vote majoritaire sur chaque ligne
@@ -56,7 +60,7 @@ class RandomForestClassifier(BaseRandomForest):
 
 class RandomForestRegressor(BaseRandomForest):
     def _make_tree(self):
-        return DecisionTreeRegressor(max_depth=self.max_depth)
+        return DecisionTreeRegressor(max_depth=self.max_depth, max_features=self.max_features)
     
     def _aggregate_predictions(self, votes_per_sample):
         # Pour la régression, on prend simplement la moyenne sur chaque ligne
